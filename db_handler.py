@@ -15,7 +15,7 @@ class Database:
         except psycopg2.OperationalError as err:
             print(f"Error connecting to the database: {err}")
             print("Please check your database credentials or ensure the server is running.")
-            exit(1)  # Exit the program if the connection fails
+            exit(1) 
         except Exception as err:
             print(f"Unexpected error during database connection: {err}")
             exit(1)
